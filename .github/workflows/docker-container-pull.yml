@@ -6,7 +6,7 @@ on:
 
 jobs:
   git-pull:
-    runs-on: homer-runner
+    runs-on: self-hosted
 
     steps:
       - name: Checkout Repository
