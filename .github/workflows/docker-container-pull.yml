@@ -15,4 +15,4 @@ jobs:
       - name: Git Pull
         run: |
           cd /shared/assets/
-          git clone https://github.com/owen97779/Pachamama-Dashboard.git
+          git pull
