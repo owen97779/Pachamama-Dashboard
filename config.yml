@@ -1,0 +1,170 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "Pachamama Cloud"
+subtitle: "Dashboard"
+logo: "/assets/tools/pachamama-home.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>Created using with <a href="https://github.com/bastienwirtz/homer">homer</a>. Thanks guys, from Benji' # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+colors:
+  dark:
+    highlight-primary: "#fbb6bf"
+    highlight-secondary: "#fbb6bf"
+    highlight-hover: "#b38188"
+    background: "#ffe9e6"
+    card-background: "#fff6f5"
+    text: "#1d1d1d"
+    text-header: "#1d1d1d"
+    text-title: "#1d1d1d"
+    text-subtitle: "#1d1d1d"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#fbb6bf"
+    link-hover: "#ffdd57"
+
+# Optional message
+message:
+  #url: https://b4bz.io
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "Configured by Benji"
+  icon: "fa fa-grin"
+  content: "Dashboard for all Pachamama Cloud services <br /> Contact me for more information <a href='https://t.me/owen97779'>Telegram</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Github"
+    icon: "fab fa-github"
+    url: "#"
+  - name: "Contribute To Homer"
+    icon: "fab fa-github"
+    url: "https://github.com/bastienwirtz/homer"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Contact"
+    icon: "fas fa-envelope"
+    url: "https://t.me/owen97779"
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  #- name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page" 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-desktop"
+    items:
+      - name: "BlueIris CCTV"
+        logo: "assets/tools/blueiris.png"
+        subtitle: "CCTV Login Gateway"
+        tag: "app"
+        keywords: "cctv blueiris"
+        url: "https://cctv.pachamama.cloud"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Proxmox"
+        logo: "assets/tools/proxmox.png"
+        subtitle: "Proxmox GUI"
+        keywords: "proxmox server"
+        tag: "app"
+        url: "https://proxmox.pachamama.cloud"
+      - name: "Portainer"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Portainer GUI for Docker"
+        keywords: "docker portainer container"
+        tag: "app"
+        url: "https://portainer.pachamama.cloud"
+      - name: "Nginx"
+        logo: "assets/tools/nginx.png"
+        subtitle: "Nginx Proxy Manager"
+        keywords: "nginx proxy manager"
+        tag: "app"
+        url: "https://nginx.pachamama.cloud"
+
+  - name: "Networking"
+    icon: "fas fa-network-wired"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
+    # logo: "path/to/logo"
+    items:
+      - name: "Unifi Controller"
+        logo: "assets/tools/unifi.png"
+        subtitle: "Unifi device management"
+        tag: "gateway"
+        keywords: "unifi controller"
+        url: "https://m010583.hostifi.com:8443/manage/zkfwgeyv/dashboard"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Chicama Router"
+        logo: "assets/tools/pachamama.png"
+        subtitle: "OPNsense GUI"
+        keywords: "chicama opnsense router"
+        tag: "gateway"
+        url: "https://chicama.pachamama.cloud"
+      - name: "PMC Router"
+        logo: "assets/tools/pachamama.png"
+        subtitle: "OPNsense GUI"
+        keywords: "pachamama central opnsense router"
+        tag: "gateway"
+        url: "https://central.pachamama.cloud"
+      - name: "PME Router"
+        logo: "assets/tools/pachamama.png"
+        subtitle: "OPNsense GUI"
+        keywords: "pachamama east opnsense router"
+        tag: "gateway"
+        url: "https://east.pachamama.cloud"
+      - name: "Zephyr Router"
+        logo: "assets/tools/pachamama.png"
+        subtitle: "OPNsense GUI"
+        keywords: "zephyr opnsense router"
+        tag: "gateway"
+        url: "https://zephyr.pachamama.cloud"
+
+  - name: "Cloudflare"
+    icon: "fas fa-cloud"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
+    # logo: "path/to/logo"
+    items:
+      - name: "Cloudflare"
+        logo: "assets/tools/cloudflare.png"
+        subtitle: "Cloudflare login"
+        tag: "login"
+        keywords: "cloudfare dns login"
+        url: "https://dash.cloudflare.com/login?lang=en-US"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Cloudflare Zero-Trust"
+        logo: "assets/tools/zero-trust.png"
+        subtitle: "Zero-Trust login"
+        keywords: "cloudflare zero trust"
+        tag: "login"
+        url: "https://one.dash.cloudflare.com/"
+
+  - name: "Documentation"
+    icon: "fas fa-pen"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
+    # logo: "path/to/logo"
+    items:
+      - name: "Jira"
+        logo: "assets/tools/jira.png"
+        subtitle: "Agile Documentation"
+        tag: "group"
+        keywords: "jira doucmentation"
+        url: "https://pachamamagroup.atlassian.net/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Gitlab"
+        logo: "assets/tools/gitlab.png"
+        subtitle: "Pachamama Group Gitlab"
+        keywords: "gitlab github"
+        tag: "repo"
+        url: "https://gitlab.com/users/sign_in"
+      - name: "Docker Hub"
+        logo: "assets/tools/docker.png"
+        subtitle: "Pachamama Group Docker Hub"
+        keywords: "docker hub"
+        tag: "repo"
+        url: "https://hub.docker.com/u/owen97779"
+      
