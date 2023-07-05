@@ -27,6 +27,20 @@ colors:
     link: "#fbb6bf"
     link-hover: "#ffdd57"
 
+  light:
+    highlight-primary: "#fbb6bf"
+    highlight-secondary: "#fbb6bf"
+    highlight-hover: "#b38188"
+    background: "#ffe9e6"
+    card-background: "#fff6f5"
+    text: "#1d1d1d"
+    text-header: "#1d1d1d"
+    text-title: "#1d1d1d"
+    text-subtitle: "#1d1d1d"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#fbb6bf"
+    link-hover: "#ffdd57"
+
 # Optional message
 message:
   #url: https://b4bz.io
